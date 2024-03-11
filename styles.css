@@ -1,0 +1,111 @@
+/* Resetting default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Sidebar */
+aside {
+    width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #e5e7eb;
+}
+
+/* Sidebar Logo */
+aside .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+aside .logo span {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Sidebar Navigation */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Main Content Header */
+main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Search Input */
+input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 768px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

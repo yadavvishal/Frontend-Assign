@@ -1,0 +1,249 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/G3i9yBxetJs
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="flex h-screen bg-gray-100">
+    <aside class="w-64 bg-white p-4">
+        <div class="flex items-center space-x-2 mb-5">
+            <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">IH</span>
+            </span>
+            <span class="font-bold">InnovateHub</span>
+        </div>
+        <nav class="mb-5">
+            <ul>
+                <li class="flex items-center justify-between mb-2">
+                    <a href="#" class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-gray-500">
+                            <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                            <line x1="3" x2="21" y1="9" y2="9"></line>
+                            <line x1="9" x2="9" y1="21" y2="9"></line>
+                        </svg>
+                        <span>Design team</span>
+                    </a>
+                    <div
+                        class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                        1
+                    </div>
+                </li>
+                <li class="flex items-center justify-between mb-2">
+                    <a href="#" class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-gray-500">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <span>Marketing Team</span>
+                    </a>
+                    <div
+                        class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                        2
+                    </div>
+                </li>
+                <li class="flex items-center justify-between mb-2">
+                    <a href="#" class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-gray-500">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                        <span>Development Team</span>
+                    </a>
+                    <div
+                        class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                        3
+                    </div>
+                </li>
+                <li>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-gray-500">
+                        Create a team
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="mb-5">
+            <div class="flex items-center justify-between mb-2">
+                <span>FOLDERS</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-gray-500">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5v14"></path>
+                </svg>
+            </div>
+            <ul>
+                <li class="flex items-center space-x-2 mb-2">
+                    <button type="button" role="checkbox" aria-checked="false" data-state="unchecked" value="on"
+                        class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                        id="products"></button>
+                    <input aria-hidden="true" tabindex="-1" type="checkbox" value="on"
+                        style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px;" />
+                    <label for="products" class="text-sm font-medium">
+                        Products
+                    </label>
+                </li>
+                <li class="pl-6 text-gray-500 mb-2">Roadmap</li>
+                <li class="pl-6 text-gray-500 mb-2">Feedback</li>
+                <li class="pl-6 text-gray-500 mb-2">Performance</li>
+                <li class="pl-6 text-gray-500 mb-2">Team</li>
+                <li class="pl-6 text-gray-500 mb-2">Analytics</li>
+                <li class="pl-6 text-gray-500 mb-2">Sales</li>
+                <li class="pl-6 text-gray-500 mb-2">Design</li>
+                <li class="pl-6 text-gray-500 mb-2">Office</li>
+                <li class="pl-6 text-gray-500">Legal</li>
+            </ul>
+        </div>
+        <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-gray-500">
+                <path d="m22 2-7 20-4-9-9-4Z"></path>
+                <path d="M22 2 11 13"></path>
+            </svg>
+            <span>Invite teammates</span>
+        </div>
+        <div class="flex items-center space-x-2 mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-gray-500">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <path d="M12 17h.01"></path>
+            </svg>
+            <span>Help and first steps</span>
+        </div>
+        <div class="flex items-center space-x-2 mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-gray-500">
+                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+            </svg>
+            <span>7 days left on trial</span>
+            <button
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-blue-500">
+                Add billing
+            </button>
+        </div>
+    </aside>
+    <main class="flex-1 p-4">
+        <header class="flex justify-between items-center mb-5">
+            <h1 class="text-xl font-bold">Products</h1>
+            <div class="flex space-x-2">
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                    Meeting
+                </button>
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                    Import/Export
+                </button>
+            </div>
+        </header>
+        <div class="flex mb-5">
+            <div class="flex space-x-2">
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                    All brands
+                </button>
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                    Desk
+                </button>
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                    Tags
+                </button>
+            </div>
+            <div class="flex space-x-2 ml-auto">
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                    Sort
+                </button>
+                <button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                    Filter
+                </button>
+            </div>
+        </div>
+        <div class="flex mb-5">
+            <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1"
+                placeholder="Search for..." type="search" />
+        </div>
+        <div class="bg-white p-4 rounded-md">
+            <div class="grid grid-cols-12 gap-4 mb-4">
+                <div class="col-span-1">Brand</div>
+                <div class="col-span-4">Description</div>
+                <div class="col-span-2">Members</div>
+                <div class="col-span-2">Categories</div>
+                <div class="col-span-2">Tags</div>
+                <div class="col-span-1">Next meeting</div>
+            </div>
+            <div class="grid grid-cols-12 gap-4 mb-4">
+                <div class="col-span-1">
+                    <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                        <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">W</span>
+                    </span>
+                </div>
+                <div class="col-span-4">Develop a personalized fitness platform</div>
+                <div class="col-span-2">
+                    <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                        <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">M1</span>
+                    </span>
+                    <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                        <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">M2</span>
+                    </span>
+                    <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                        <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">M3</span>
+                    </span>
+                </div>
+                <div class="col-span-2">
+                    <div
+                        class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">
+                        Automation
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <div
+                        class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">
+                        #DigitalTransformation
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div
+                        class="inline-flex items-center rounded-full whitespace-nowrap border px-2.5 py-0.5 w-fit text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+                        in 30 minutes
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<!-- =========== Scripts =========  -->
+<script src="main.js"></script>
+
+<!-- ====== ionicons ======= -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+*/
